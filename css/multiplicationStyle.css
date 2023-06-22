@@ -1,0 +1,110 @@
+/*
+File: multiplicationStyle.css
+GUI Assignment: HW4 part 2
+Description: jQuery UI Slider and Tab Widgets
+Matthew Lorette Anaya, UMass Lowell Computer Science, Matthew_loretteanaya@student.uml.edu
+Copyright (c) 2023 by Matt. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by Matthew Lorette Anaya on June 22, 2023
+*/
+/* General styles for html element - black background and 100% height */
+html {
+    background-color: black;
+    height: 100%;
+}
+
+/* Styling for body including colors, border, dimensions, padding, font */
+body {
+    background-color: gray;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+    color: white;
+    margin: 0 auto;
+    max-width: 960px;
+    min-height: 100%;
+    min-width: 700px;
+    padding: 20px;
+    width: 65%;
+}
+
+/* Font settings for html, body and input */
+html, body, input {
+    font: normal 16px/100% Arial, sans-serif;
+}
+
+/* Styling for fieldset element within multiplicationForm, including border, margin, padding and display properties */
+#multiplicationForm fieldset {
+    border: 1px solid white;
+    margin-bottom: 20px;
+    padding: 20px 30px 25px 30px;
+    
+}
+
+/* Bold and center align the legend within multiplicationForm */
+#multiplicationForm legend {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Color and margin for number inputs within multiplicationForm */
+#multiplicationForm input[type='number'] {
+    color: black;
+    margin-right: 20px;
+}
+
+/* Styles for submit button in the multiplicationForm */
+#multiplicationForm input[type='submit'] {
+    background-color: #333333;
+    border: 0;
+    color: white;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/* Hover effect for submit button in the multiplicationForm */
+#multiplicationForm input[type='submit']:hover {
+    color: skyblue;
+}
+
+/* Active (on click) effect for submit button in the multiplicationForm */
+#multiplicationForm input[type='submit']:active {
+    background-color: #000000;
+}
+
+/* Styles for the multiplicationTable including border, text alignment, width, color, font size */
+#multiplicationTable {
+    border-collapse: collapse;
+    display: block;
+    max-height: auto;
+    overflow: auto;
+    text-align: center;
+    width: auto;
+    color: #333333;
+    font-size: 1em;
+}
+
+/* Background color for alternate rows and columns in the multiplicationTable */
+#multiplicationTable tr:nth-child(even) td:nth-child(odd),
+#multiplicationTable tr:nth-child(odd) td:nth-child(even) {
+    background-color: #e0e0e0; /* Light gray */
+}
+
+/* Styles for th elements in the multiplicationTable */
+#multiplicationTable th {
+    background-color: lightblue; /* Darker blue */
+    color: #ffffff; /* White */
+}
+
+/* Border and padding for th and td elements in the multiplicationTable */
+#multiplicationTable th, #multiplicationTable td {
+    border: 2px solid #000000; /* Black border */
+    padding: 0.8rem;
+}
+
+/* Color for validation error messages */
+label.error {
+    color: blue;
+}

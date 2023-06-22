@@ -1,0 +1,83 @@
+<!--
+File: index.html
+GUI Assignment: HW4 part 2
+Description: jQuery UI Slider and Tab Widgets
+Matthew Lorette Anaya, UMass Lowell Computer Science, Matthew_loretteanaya@student.uml.edu
+Copyright (c) 2023 by Matt. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by Matthew Lorette Anaya on June 22, 2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Title of the webpage -->
+    <title>Interactive Dynamic Multiplication Table</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="css/multiplicationStyle.css">
+    <!-- Link to the external jQuery UI CSS file -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <!-- Include jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Include jQuery UI library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <!-- Include jQuery Validation library -->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <!-- Include custom JS file -->
+    <script src="js/multiplicationScript.js"></script>
+  </head>
+  <body>
+    <!-- Div for tabs -->
+    <div id="tabs">
+      <!-- List for tab headers -->
+      <ul>
+        <!-- Single list item for 'Multiplication Form' tab header -->
+        <li><a href="#formTab">Multiplication Form</a></li>
+      </ul>
+      <!-- 'Multiplication Form' tab content -->
+      <div id="formTab">
+        <!-- Form for inputs and submission -->
+        <form id="multiplicationForm">
+            <!-- Fieldset for grouping related form controls -->
+            <fieldset>
+                <!-- Legend for the fieldset -->
+                <legend>Multiplier Range</legend>
+                <!-- Label and input for minimum multiplier -->
+                <label for="multiplierMinValue">Minimum</label>
+                <input id="multiplierMinValue" type="number" name="multiplierMinValue" required>
+                <!-- Div for minimum multiplier slider -->
+                <div id="multiplierMinValueSlider"></div>
+
+                <!-- Label and input for maximum multiplier -->
+                <label for="multiplierMaxValue">Maximum</label>
+                <input id="multiplierMaxValue" type="number" name="multiplierMaxValue" required>
+                <!-- Div for maximum multiplier slider -->
+                <div id="multiplierMaxValueSlider"></div>
+            </fieldset>
+
+            <!-- Another fieldset for another group of form controls -->
+            <fieldset>
+                <!-- Legend for the fieldset -->
+                <legend>Multiplicand Range</legend>
+                <!-- Label and input for minimum multiplicand -->
+                <label for="multiplicandMinValue">Minimum</label>
+                <input id="multiplicandMinValue" type="number" name="multiplicandMinValue" required>
+                <!-- Div for minimum multiplicand slider -->
+                <div id="multiplicandMinValueSlider"></div>
+
+                <!-- Label and input for maximum multiplicand -->
+                <label for="multiplicandMaxValue">Maximum</label>
+                <input id="multiplicandMaxValue" type="number" name="multiplicandMaxValue" required>
+                <!-- Div for maximum multiplicand slider -->
+                <div id="multiplicandMaxValueSlider"></div>
+            </fieldset>
+
+            <!-- Submit button for the form -->
+            <input type="submit" value="Generate Multiplication Table">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+
